@@ -15,7 +15,6 @@ Le projet est structuré de manière **modulaire**, **claire** et **scalable** :
 
 src/ 
 ├── app/ 
-│ 
 ├── core/ → services globaux (guards, interceptors...) 
 │ 
 ├── shared/ → composants réutilisables, pipes, directives 
@@ -33,7 +32,8 @@ src/
 ├── features/ 
 │ 
 │ ├── auth/ → module de login/register 
-│ │ │ ├── components/ → composants UI (login-form, register-form) │ │ │ ├── views/ → vues routables (LoginView, RegisterView) │ │ │ └── services/ → logique métier propre à auth │ │ ├── dashboard/ → autres features similaires │ └── app-routing.module.ts → routes principales │ └── app.module.ts → module racine ├── environments/ → config Firebase └── index.html / main.ts → point d'entrée Angular
+│ │ │ ├── components/ → composants UI (login-form, register-form) │ │ │ ├── views/ → vues routables (LoginView, RegisterView) │ │ │ └── services/ → logique métier propre à auth 
+│ │ ├── dashboard/ → autres features similaires │ └── app-routing.module.ts → routes principales │ └── app.module.ts → module racine ├── environments/ → config Firebase └── index.html / main.ts → point d'entrée Angular
 
 ---
 
